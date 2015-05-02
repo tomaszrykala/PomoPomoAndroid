@@ -24,14 +24,13 @@ android {
         // Skip pre-dexing when running on Travis CI or when disabled via -Dpre-dex=false.
         preDexLibraries = rootProject.ext.preDexEnabled && !rootProject.ext.isTravis
         javaMaxHeapSize "3g"
-        threadCount 1
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:22.1.0'
-    compile 'com.android.support:support-annotations:22.1.0'
+    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:support-annotations:22.1.1'
 
     compile 'com.google.android.gms:play-services:7.0.0'
 
